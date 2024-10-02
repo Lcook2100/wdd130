@@ -10,7 +10,7 @@ h1, h2 {
 }
 
 h1 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 h2 {
@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 nav {
@@ -31,6 +31,119 @@ body {
     padding: 0 20px;
 }
 
+header {
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header img {
+    grid-column: 1 / 2;
+    max-width: 160px; 
+    height: auto;
+}
+
+header nav {
+    grid-column: 2 / 4;
+    justify-self: center;
+}
+
+header a {
+    padding: 10px;
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-family: 'Rancho';
+    font-size: 2.0em;
+}
+
+header a:hover {
+    background-color: var(--accent1-color);
+}
+
+section img {
+    width: 215px;  
+    height: 175px; 
+    object-fit: cover; 
+    margin: 0px; 
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    text-align: right;
+    font-family: 'rancho';
+    font-size: 1.2em;
+    color: var(--accent2-color);
+    margin-left: 450px;
+}
+
+.history {
+    text-align: center;
+    max-width: 1500px;
+    margin: 20px auto;
+    background-color: rgba(244, 233, 206, 0.8);
+    width: 100%;
+}
+
+.history h2 {
+    margin-bottom: 0px;
+}
+
+.history p {
+    font-family: 'rancho';
+    font-size: 1.2em;
+}
+
+.images {
+    background-color: rgba(244, 233, 206, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images h2 {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.images figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: 10px;
+}
+
+.images img {
+    width: 200px; 
+    height: 175px;
+    object-fit: cover;
+}
+
+.images figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -40,32 +153,37 @@ body {
 
 .hero img {
     width: 100%;
-    height: 80%;
+    height: 50%;
     object-fit: cover;
 }
 
 .hero h1 {
     position: absolute;
-    top: 200px;
-    left: 450px;
+    top: 250px;
+    left: 0;
+    right: 0;
     margin: 0;
-    padding: 10px;
-    background-color: var(--accent2-color)
+    padding: 10px 0;
+    background-color: rgba(244, 233, 206, 0.8);
+    text-align: center;
+    width: 100%;
 }
 
 .hero article {
     position: absolute;
-    bottom: 400px;
+    bottom: 300px;
     left: 20px;
     right: 20px;
-    background-color: rgba(242, 227, 188, 0.8); 
+    background-color: rgba(244, 233, 206, 0.8);
     padding: 10px;
 }
 
 .hero article p {
     margin: 0;
     padding: 10px;
-    color: var(--accent1-color); 
+    color: var(--secondary-color); 
+    font-family: 'rancho';
+    font-size: 1.2em;
 }
 
 .hero article img {
@@ -75,16 +193,10 @@ body {
     float: right;
 }
 
-section img {
-    width: 200px;  
-    height: 150px; 
-    object-fit: cover; 
-    margin: 10px; 
-}
-
 .sociallinks img {
     width: 30px;  
     height: 30px; 
-    object-fit: contain; 
     margin: 0 5px; 
+    float: right;
+    bottom: 20px;
 }
