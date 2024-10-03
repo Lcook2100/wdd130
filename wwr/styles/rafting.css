@@ -2,7 +2,7 @@
     --primary-color: #629677;
     --secondary-color: #3066be;
     --accent1-color: #4d685a;
-    --accent2-color: #f2e3bc;
+    --accent2-color: #fffaed;
 }
 
 h1, h2 {
@@ -53,6 +53,7 @@ header img {
 header nav {
     grid-column: 2 / 4;
     justify-self: center;
+    display: flex;
 }
 
 header a {
@@ -80,14 +81,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--primary-color);
 }
 
 footer p {
     text-align: right;
     font-family: 'rancho';
-    font-size: 1.2em;
-    color: var(--accent2-color);
+    font-size: 1.4em;
     margin-left: 450px;
 }
 
@@ -200,4 +199,3 @@ footer p {
     float: right;
     bottom: 20px;
 }
-
