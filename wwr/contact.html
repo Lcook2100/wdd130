@@ -33,7 +33,7 @@
                 <p>123 River Road, Colorado Springs, CO 80903</p>
                 <p>Phone: (555) 123-4567</p>
                 <p>Email: info@rapidriders.com</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.1515420549054!2d-104.82090708439842!3d38.833492179579024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8713412ea1e6d22b%3A0x76f7db37a6df43c4!2s123%20River%20Rd%2C%20Colorado%20Springs%2C%20CO%2080915!5e0!3m2!1sen!2sus!4v1633642038118!5m2!1sen!2sus" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.1515420549054!2d-104.82090708439842!3d38.833492179579024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8713412ea1e6d22b%3A0x76f7db37a6df43c4!2s123%20River%20Rd%2C%20Colorado%20Springs%2C%20CO%2080915!5e0!3m2!1sen!2sus!4v1633642038118!5m2!1sen!2sus" width="540" height="300" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="contact-form">
                 <h2>Get in Touch</h2>
@@ -46,23 +46,23 @@
 
                     <label>Please select one of the following for your reason of contact:</label>
                     <label>
-                        <input type="radio" name="purpose" value="inquiry" required> General Inquiry
+                        <input type="radio" name="purpose" id="generalinquiry" value="inquiry" required> General Inquiry
                     </label>
                     <label>
-                        <input type="radio" name="purpose" value="reservation"> Reservation Question
+                        <input type="radio" name="purpose" id="reservationquestion" value="reservation"> Reservation Question
                     </label>
                     <label>
-                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+                        <input type="radio" name="purpose" id="websitesuggestion" value="suggestion"> Website Suggestion
                     </label>
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
 
                     <label>
-                        <input type="checkbox" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter
+                        <input type="checkbox" name="subscribe" id="subscription" value="yes"> Please subscribe me to the monthly newsletter
                     </label>
 
-                    <button type="submit">Send Message</button>
+                    <button type="submit" id="submit">Send Message</button>
                 </form>
             </div>
         </div>
