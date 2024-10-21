@@ -177,9 +177,9 @@ footer {
 }
 
 footer p {
-    text-align: right;
+    text-align: center;
     font-size: 1.4em;
-    margin-right: 100px;
+    margin: 0 auto;
 }
 
 .sociallinks img {
